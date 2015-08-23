@@ -31,6 +31,8 @@ html,
 body {
   height: 100%;
   background-color: #fff;
+  /*background: url("http://assets.sbnation.com/assets/2579843/okposo_large.gif");
+  background-size: 100% auto;*/
 }
 body {
   color: #F57D31;
@@ -55,7 +57,7 @@ body {
 
 /* Padding for spacing */
 .inner {
-  padding: 1em 1em 2em 2em;
+  padding: 1em 0em 1em 0em;
   background-color: #00529B; 
 }
 
@@ -185,6 +187,6 @@ ul{
   .masthead,
   .mastfoot,
   .cover-container {
-    width: 700px;
+    width: 400px;
   }
 }
