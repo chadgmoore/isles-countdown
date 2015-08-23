@@ -32,7 +32,8 @@ body {
   height: 100%;
   background-color: #fff;
   /*background: url("http://assets.sbnation.com/assets/2579843/okposo_large.gif");
-  background-size: 100% auto;*/
+  background-size: contain;
+  background-repeat: no-repeat;*/
 }
 body {
   color: #F57D31;
@@ -53,6 +54,7 @@ body {
 .cover-container {
   margin-right: auto;
   margin-left: auto;
+  width: 200px;
 }
 
 /* Padding for spacing */
@@ -104,6 +106,10 @@ body {
   }
   .masthead-nav {
     float: right;
+  }
+
+  .cover-container{
+    width: 400px; 
   }
 }
 
@@ -179,7 +185,11 @@ ul{
   .masthead,
   .mastfoot,
   .cover-container {
-    width: 100%; /* Must be percentage or pixels for horizontal alignment */
+    width: 200px; /* Must be percentage or pixels for horizontal alignment */
+  }
+
+  body{
+    background-size: cover;
   }
 }
 
@@ -187,6 +197,6 @@ ul{
   .masthead,
   .mastfoot,
   .cover-container {
-    width: 400px;
+    width: 300px;
   }
 }
