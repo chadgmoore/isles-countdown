@@ -1,16 +1,45 @@
 $(document).ready(function() {
 	var seasonStartDate="2015-10-9";
-	var configDate=new Date(seasonStartDate);
 
 	var oneDay = 24*60*60*1000; // hours*minutes*seconds*milliseconds
 	var firstDate = new Date(); // Todays date
 	var secondDate = new Date(seasonStartDate);
 
-	var diffDays = Math.ceil(Math.abs(firstDate.getTime() - secondDate.getTime())/(oneDay));
-
-	// alert(diffDays);
+	var daysRemaining = Math.ceil(Math.abs(firstDate.getTime() - secondDate.getTime())/(oneDay));
+	
 	$('.dayTarget').empty();
-	$('.dayTarget').append(diffDays)
+    $('.dayTarget').append(daysRemaining);
 
+	console.log(daysRemaining);
 
+	var data = {"islandersRoster":[
+    {"sweaterNumber":"1", "firstName":"Thomas", "lastName":"Greiss", "position":"G"},
+	{"sweaterNumber":"2", "firstName":"Nick", "lastName":"Leddy", "position":"D"},
+	{"sweaterNumber":"3", "firstName":"Travis", "lastName":"Hamonic", "position":"D"},
+	{"sweaterNumber":"12", "firstName":"Josh", "lastName":"Bailey", "position":"L"},
+	{"sweaterNumber":"14", "firstName":"Thomas", "lastName":"Hickey", "position":"D"},
+	{"sweaterNumber":"15", "firstName":"Cal", "lastName":"Clutterbuck", "position":"R"},
+	{"sweaterNumber":"17", "firstName":"Matt", "lastName":"Martin", "position":"L"},
+	{"sweaterNumber":"18", "firstName":"Ryan", "lastName":"Strome", "position":"C"},
+	{"sweaterNumber":"21", "firstName":"Kyle", "lastName":"Okposo", "position":"R"},
+	{"sweaterNumber":"27", "firstName":"Anders", "lastName":"Lee", "position":"C"},
+	{"sweaterNumber":"29", "firstName":"Brock", "lastName":"Nelson", "position":"C"},
+	{"sweaterNumber":"37", "firstName":"Brian", "lastName":"Strait", "position":"D"},
+	{"sweaterNumber":"40", "firstName":"Michael", "lastName":"Grabner", "position":"R"},
+	{"sweaterNumber":"41", "firstName":"Jaroslav", "lastName":"Halak", "position":"G"},
+	{"sweaterNumber":"44", "firstName":"Calvin", "lastName":"De Haan", "position":"D"},
+	{"sweaterNumber":"51", "firstName":"Frans", "lastName":"Nielsen", "position":"C"},
+	{"sweaterNumber":"53", "firstName":"Casey", "lastName":"Cizikas", "position":"C"},
+	{"sweaterNumber":"55", "firstName":"Johnny", "lastName":"Boychuk", "position":"D"},
+	{"sweaterNumber":"84", "firstName":"Mikhail", "lastName":"Grabovski", "position":"C"},
+	{"sweaterNumber":"86", "firstName":"Nikolay", "lastName":"Kulemin", "position":"L"},
+	{"sweaterNumber":"91", "firstName":"John", "lastName":"Tavares", "position":"C"}    
+]}
+
+for ( var i in data.islandersRoster ) {
+    if (data.islandersRoster[i].sweaterNumber == daysRemaining) {
+      $('.dayTarget').empty();
+      $('.dayTarget').append(data.islandersRoster[i].firstName);
+  }
+}
 });
