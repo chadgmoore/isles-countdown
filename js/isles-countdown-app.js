@@ -27,10 +27,10 @@ $(document).ready(function() {
 	{"sweaterNumber":"40", "firstName":"Michael", "lastName":"Grabner", "position":"R", "gif":"http://cdn.fansided.com/wp-content/blogs.dir/111/files/2013/12/Grabner-Goal-vs-Rangers.gif"},
 	{"sweaterNumber":"41", "firstName":"Jaroslav", "lastName":"Halak", "position":"G", "gif":"https://media2.giphy.com/media/91uSZRRHVszCM/200.gif"},
 	{"sweaterNumber":"44", "firstName":"Calvin", "lastName":"De Haan", "position":"D", "gif":"http://cdn.fansided.com/wp-content/blogs.dir/111/files/2014/02/Calvin-de-Haan-Goal-vs-Flames.gif"},
-	{"sweaterNumber":"51", "firstName":"Frans", "lastName":"Nielsen", "position":"C"},
-	{"sweaterNumber":"53", "firstName":"Casey", "lastName":"Cizikas", "position":"C"},
-	{"sweaterNumber":"55", "firstName":"Johnny", "lastName":"Boychuk", "position":"D"},
-	{"sweaterNumber":"84", "firstName":"Mikhail", "lastName":"Grabovski", "position":"C"},
+	{"sweaterNumber":"51", "firstName":"Frans", "lastName":"Nielsen", "position":"C", "gif":"http://cdn.fansided.com/wp-content/blogs.dir/111/files/2014/03/Frans-Nielsen-Goal-vs-Oilers.gif"},
+	{"sweaterNumber":"53", "firstName":"Casey", "lastName":"Cizikas", "position":"C", "gif":"http://cdn.fansided.com/wp-content/blogs.dir/111/files/2014/01/Casey-Cizikas-Goal-vs-Blackhawks.gif"},
+	{"sweaterNumber":"55", "firstName":"Johnny", "lastName":"Boychuk", "position":"D", "gif":"http://giant.gfycat.com/AdvancedCourageousBarracuda.gif"},
+	{"sweaterNumber":"84", "firstName":"Mikhail", "lastName":"Grabovski", "position":"C", "gif":"http://giant.gfycat.com/HelplessSecretAidi.gif"},
 	{"sweaterNumber":"86", "firstName":"Nikolay", "lastName":"Kulemin", "position":"L", "gif":"http://bloguin.com/islandersinsight/wp-content/uploads/sites/173/2014/11/Kulemin-Goal-vs-Penguins.gif"},
 	{"sweaterNumber":"91", "firstName":"John", "lastName":"Tavares", "position":"C", "gif":"http://i.imgur.com/A1nf6XM.gif"}    
 ]};
