@@ -10,6 +10,7 @@ $(document).ready(function() {
 	
 	$('.dayTarget').empty();
     $('.dayTarget').append(daysRemaining);
+    console.log(daysRemaining);
 
 	var data = {"islandersRoster":[
     {"sweaterNumber":"1", "firstName":"Thomas", "lastName":"Greiss", "position":"G", "gif":"http://bloguin.com/islandersinsight/wp-content/uploads/sites/173/2014/10/Tavares-Goal-vs-Hurricanes.gif"},
@@ -40,11 +41,12 @@ for ( var i in data.islandersRoster ) {
     	$('.dayTarget').empty();
     	$('.dayTarget').append(data.islandersRoster[i].sweaterNumber);
     	$("body").css({"background":"url("+data.islandersRoster[i].gif+")"});
-    	$("body").css({"background-size":"cover"});
+    	$("body").css({"background-size":"contain"});
     	$("body").css({"background-repeat":"no-repeat"});
-    	$('.cover-container').delay(800).animate({opacity: 0.1, duration: "slow", easing: "easein"});
-    	$('.cover-container').delay(6400).animate({opacity: 1, duration: "slow", easing: "easein"});
-    	
+    	$('.inner').delay(800).animate({opacity: 0.1, duration: "slow", easing: "easein"});
+    	$('.inner').delay(6400).animate({opacity: 1, duration: "slow", easing: "easein"});
+    	$('.displayInfo').empty();
+    	$('.displayInfo').empty().append('<span id=nameColor>'+data.islandersRoster[i].firstName + ' ' + data.islandersRoster[i].lastName + '</span>' + " more days!"); 	
     }
 }
 

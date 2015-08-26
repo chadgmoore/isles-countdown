@@ -12,17 +12,6 @@ a:hover {
   color: #fff;
 }
 
-/* Custom default button */
-.btn-default,
-.btn-default:hover,
-.btn-default:focus {
-  color: #333;
-  text-shadow: none; /* Prevent inheritence from `body` */
-  background-color: #fff;
-  border: 1px solid #fff;
-}
-
-
 /*
  * Base structure
  */
@@ -31,13 +20,19 @@ html,
 body {
   height: 100%;
   background-color: #fff;
-  /*background: url("http://assets.sbnation.com/assets/2579843/okposo_large.gif");
+  background: url("http://1.cdn.nhle.com/nhl/images/upload/2014/07/OKPOSO_JT_FANTASY_072814.jpg"); 
   background-size: contain;
-  background-repeat: no-repeat;*/
+  background-repeat: no-repeat;  
+  font-size: 1em;
+  line-height: 10em;
 }
 body {
   color: #F57D31;
   text-align: center;
+}
+
+#nameColor{
+  color: #F57D31;
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
@@ -46,68 +41,73 @@ body {
   width: 100%;
   height: 100%; /* For at least Firefox */
   min-height: 100%;
+  vertical-align: bottom;
 }
 .site-wrapper-inner {
   display: table-cell;
-  vertical-align: top;
+  vertical-align: middle;
 }
 .cover-container {
   margin-right: auto;
   margin-left: auto;
   width: 200px;
+  display: inline;
 }
 
 /* Padding for spacing */
 .inner {
   padding: 1em 0em 1em 0em;
   background-color: #00529B; 
+  height: 50%;
 }
+
+
+.dayTarget{
+  font-size: 2em;
+  color: #F57D31;
+  display: inline-block;
+  line-height: 1em;
+  vertical-align: middle;
+  /*width: 25%;*/
+}
+
+.displayInfo{
+  display: inline-block;
+  vertical-align: middle;
+  font-size: .8em;
+  width: 50%;
+  line-height: 1.4em;
+}
+
+.displayFooter{
+  display: inline-block;
+  text-align: right;
+  width: 20%;
+  text-transform: none;
+  line-height: 1.2em;
+  vertical-align: middle;
+}
+
+.displayFooter a{
+  color: #fff;
+  text-transform: uppercase;
+
+}
+
+.displayFooter a:hover{
+  color: #F57D31;
+  text-transform: uppercase;
+}
+
 
 
 /*
  * Header
  */
-.masthead-brand {
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
 
-.masthead-nav > li {
-  display: inline-block;
-}
-.masthead-nav > li + li {
-  margin-left: 20px;
-}
-.masthead-nav > li > a {
-  padding-right: 0;
-  padding-left: 0;
-  font-size: 16px;
-  font-weight: bold;
-  color: #fff; /* IE8 proofing */
-  color: rgba(255,255,255,.75);
-  border-bottom: 2px solid transparent;
-}
-.masthead-nav > li > a:hover,
-.masthead-nav > li > a:focus {
-  background-color: transparent;
-  border-bottom-color: #a9a9a9;
-  border-bottom-color: rgba(255,255,255,.25);
-}
-.masthead-nav > .active > a,
-.masthead-nav > .active > a:hover,
-.masthead-nav > .active > a:focus {
-  color: #fff;
-  border-bottom-color: #fff;
-}
 
 @media (min-width: 768px) {
-  .masthead-brand {
-    float: left;
-  }
-  .masthead-nav {
-    float: right;
-  }
-
+ 
   .cover-container{
     width: 400px; 
   }
@@ -124,20 +124,7 @@ body {
   text-transform: uppercase;
   color: #fff;
 }
-.cover .btn-lg {
-  padding: 10px 20px;
-  font-weight: bold;
-}
 
-
-/*
-* CUSTOM
-*/
-
-.dayTarget{
-  font-size: 8em;
-  color: #F57D31;
-}
 
 .inner hr{
   width: 66%;
@@ -169,20 +156,17 @@ ul{
 
 @media (min-width: 768px) {
   /* Pull out the header and footer */
-  .masthead {
-    position: fixed;
-    top: 0;
-  }
+ 
   .mastfoot {
-    /*position: fixed;
-    bottom: 0;*/
-  }
+    position: fixed;
+    bottom: 0;
+    display: inline-block;
+    }
   /* Start the vertical centering */
   .site-wrapper-inner {
-    vertical-align: middle;
+    vertical-align: bottom;
   }
   /* Handle the widths */
-  .masthead,
   .mastfoot,
   .cover-container {
     width: 200px; /* Must be percentage or pixels for horizontal alignment */
@@ -191,12 +175,85 @@ ul{
   body{
     background-size: cover;
   }
+
+.dayTarget{
+  font-size: 8em;
+  color: #F57D31;
+  display: inline-block;
+  line-height: 1em;
+  vertical-align: bottom;
+  /*width: 25%;*/
+}
+
+.displayInfo{
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 2em;
+  width: 50%;
+  line-height: 1em;
+}
+.displayFooter{
+  display: inline-block;
+  text-align: right;
+  width: 20%;
+  text-transform: none;
+  line-height: 1.4em;
+  vertical-align: middle;
+}
+
+.displayFooter a{
+  color: #fff;
+  text-transform: uppercase;
+
+}
+
+.displayFooter a:hover{
+  color: #F57D31;
+  text-transform: uppercase;
+}
+
+
 }
 
 @media (min-width: 992px) {
-  .masthead,
   .mastfoot,
   .cover-container {
     width: 300px;
   }
+
+
+.dayTarget{
+  display: inline-block;
+  line-height: 1em;
+  vertical-align: bottom;
+  /*width: 25%;*/
+}
+
+.displayInfo{
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 2em;
+  width: 50%;
+  line-height: 1em;
+}
+
+.displayFooter{
+  display: inline-block;
+  text-align: right;
+  width: 20%;
+  text-transform: none;
+  line-height: 1.4em;
+  vertical-align: middle;
+}
+
+.displayFooter a{
+  color: #fff;
+  text-transform: uppercase;
+
+}
+
+.displayFooter a:hover{
+  color: #F57D31;
+  text-transform: uppercase;
+}
 }
