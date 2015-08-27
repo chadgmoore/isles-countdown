@@ -1,15 +1,15 @@
 $(document).ready(function() {
     var seasonStartDate="2015/10/9";
-    console.log(seasonStartDate);
 
-    var oneDay = 24*60*60*1000; // hours*minutes*seconds*milliseconds
-    var todaysDate = new Date(); // Todays date
+    var oneDay = 24*60*60*1000;
+    var todaysDate = new Date();
     var secondDate = new Date(seasonStartDate);
     var daysRemaining = Math.ceil(Math.abs(todaysDate.getTime() - secondDate.getTime())/(oneDay));
     // daysRemaining = 0;
 
     $('.dayTarget').empty();
     $('.dayTarget').append(daysRemaining);
+    $("body").css({"background-color":"#00529B"});
 
     var data = {"islandersRoster":[
     {"sweaterNumber":"1", "firstName":"Thomas", "lastName":"Greiss", "position":"G", "gif":"http://bloguin.com/islandersinsight/wp-content/uploads/sites/173/2014/10/Tavares-Goal-vs-Hurricanes.gif"},
@@ -42,12 +42,13 @@ for ( i in data.islandersRoster ) {
         $("body").css({"background":"url("+data.islandersRoster[i].gif+")"});
         $("body").css({"background-size":"contain"});
         $("body").css({"background-repeat":"no-repeat"});
+        $("body").css({"background-color":"#00529B"});
         $('.inner').delay(800).animate({opacity: 0.1, duration: "slow", easing: "easein"});
         $('.inner').delay(6400).animate({opacity: 1, duration: "slow", easing: "easein"});
         $('.displayInfo').empty();
         $('.displayInfo').empty().append('<span id=nameColor>'+data.islandersRoster[i].firstName + ' ' + data.islandersRoster[i].lastName + '</span>' + " more days!");
     }
-    // if (data.islandersRoster[i].sweaterNumber !== daysRemaining){
+    // else (data.islandersRoster[i].sweaterNumber != daysRemaining){
     //  $('body').css({"background":"url(http://1.cdn.nhle.com/nhl/images/upload/2014/07/OKPOSO_JT_FANTASY_072814.jpg)"});
     // }
 }
