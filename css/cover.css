@@ -1,7 +1,3 @@
-/*
- * Globals
- */
-
  /*F57D31 orange*/
  /*00529B blue*/
 
@@ -141,9 +137,9 @@ ul{
  */
 
 .mastfoot {
-  color: #999; /* IE8 proofing */
-  color: rgba(255,255,255,.5);
-  font-family: font-family: 'Oswald', sans-serif;
+  /*color: #999;*/ /* IE8 proofing */
+  /*color: rgba(255,255,255,.5);*/
+  font-family: 'Oswald', sans-serif;
 }
 
 .mastfoot a:hover{
