@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    var seasonStartDate="2015/10/9";
+    var seasonStartDate="2016/10/13";
 
     var oneDay = 24*60*60*1000;
     var todaysDate = new Date();
