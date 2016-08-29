@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    var seasonStartDate="2015/10/9";
+    var seasonStartDate="2016/10/13";
 
     var oneDay = 24*60*60*1000;
     var todaysDate = new Date();
@@ -15,19 +15,19 @@ $(document).ready(function() {
     {"sweaterNumber":"1", "firstName":"Thomas", "lastName":"Greiss", "position":"G", "gif":"http://bloguin.com/islandersinsight/wp-content/uploads/sites/173/2014/10/Tavares-Goal-vs-Hurricanes.gif"},
     {"sweaterNumber":"2", "firstName":"Nick", "lastName":"Leddy", "position":"D", "gif":"http://i.imgur.com/bBiwzJY.gif"},
     {"sweaterNumber":"3", "firstName":"Travis", "lastName":"Hamonic", "position":"D", "gif":"http://bloguin.com/islandersinsight/wp-content/uploads/sites/173/2014/11/Hamonic-Goal-vs-Capitals.gif"},
+    {"sweaterNumber":"10", "firstName":"Alan", "lastName":"Quine", "position":"C", "gif":"http://i0.wp.com/gothamsn.com/wp-content/uploads/2016/04/QUINEot.gif"},
+    {"sweaterNumber":"11", "firstName":"Shane", "lastName":"Prince", "position":"C", "gif":"https://dabuzzzadotcom.files.wordpress.com/2016/03/shaneprince.gif"},
     {"sweaterNumber":"12", "firstName":"Josh", "lastName":"Bailey", "position":"L", "gif":"http://i.imgur.com/OKwlm99.gif"},
     {"sweaterNumber":"14", "firstName":"Thomas", "lastName":"Hickey", "position":"D", "gif":"http://cdn.fansided.com/wp-content/blogs.dir/111/files/2014/01/Thomas-Hickey-Goal-vs-Rangers.gif"},
     {"sweaterNumber":"15", "firstName":"Cal", "lastName":"Clutterbuck", "position":"R", "gif":"https://snyislanders.files.wordpress.com/2013/12/clutterbuckshhhh.gif"},
-    {"sweaterNumber":"17", "firstName":"Matt", "lastName":"Martin", "position":"L", "gif":"http://cdn2.sbnation.com/imported_assets/1598309/crosbyhit_medium.gif"},
+    {"sweaterNumber":"16", "firstName":"Andrew", "lastName":"Ladd", "position":"L", "gif":"http://assets.sbnation.com/assets/2251739/quickgoal.gif"},
+    {"sweaterNumber":"17", "firstName":"PA", "lastName":"Parenteau", "position":"R", "gif":"https://media.giphy.com/media/TZV698g7T2q0o/giphy.gif"},
     {"sweaterNumber":"18", "firstName":"Ryan", "lastName":"Strome", "position":"C", "gif":"http://cdn.fansided.com/wp-content/blogs.dir/111/files/2014/03/Ryan-Strome-Goal-vs-Canucks.gif"},
-    {"sweaterNumber":"21", "firstName":"Kyle", "lastName":"Okposo", "position":"R", "gif":"http://assets.sbnation.com/assets/2579843/okposo.gif"},
+    {"sweaterNumber":"25", "firstName":"Jason", "lastName":"Chimera", "position":"L", "gif":"http://cdn1.sbnation.com/assets/3715321/him.gif"},
     {"sweaterNumber":"27", "firstName":"Anders", "lastName":"Lee", "position":"C", "gif":"http://giant.gfycat.com/GraveBraveAntlion.gif"},
     {"sweaterNumber":"29", "firstName":"Brock", "lastName":"Nelson", "position":"C", "gif":"http://cdn.fansided.com/wp-content/blogs.dir/111/files/2014/02/Brock-Nelson-Goal-vs-Rangers.gif"},
-    {"sweaterNumber":"37", "firstName":"Brian", "lastName":"Strait", "position":"D", "gif":"http://cdn.fansided.com/wp-content/blogs.dir/111/files/2014/01/Brian-Stait-Goal-vs-Flyers.gif"},
-    {"sweaterNumber":"40", "firstName":"Michael", "lastName":"Grabner", "position":"R", "gif":"http://cdn.fansided.com/wp-content/blogs.dir/111/files/2013/12/Grabner-Goal-vs-Rangers.gif"},
     {"sweaterNumber":"41", "firstName":"Jaroslav", "lastName":"Halak", "position":"G", "gif":"https://media2.giphy.com/media/91uSZRRHVszCM/200.gif"},
     {"sweaterNumber":"44", "firstName":"Calvin", "lastName":"De Haan", "position":"D", "gif":"http://cdn.fansided.com/wp-content/blogs.dir/111/files/2014/02/Calvin-de-Haan-Goal-vs-Flames.gif"},
-    {"sweaterNumber":"51", "firstName":"Frans", "lastName":"Nielsen", "position":"C", "gif":"http://cdn.fansided.com/wp-content/blogs.dir/111/files/2014/03/Frans-Nielsen-Goal-vs-Oilers.gif"},
     {"sweaterNumber":"53", "firstName":"Casey", "lastName":"Cizikas", "position":"C", "gif":"http://cdn.fansided.com/wp-content/blogs.dir/111/files/2014/01/Casey-Cizikas-Goal-vs-Blackhawks.gif"},
     {"sweaterNumber":"55", "firstName":"Johnny", "lastName":"Boychuk", "position":"D", "gif":"http://giant.gfycat.com/AdvancedCourageousBarracuda.gif"},
     {"sweaterNumber":"84", "firstName":"Mikhail", "lastName":"Grabovski", "position":"C", "gif":"http://giant.gfycat.com/HelplessSecretAidi.gif"},
@@ -54,7 +54,7 @@ for ( i in data.islandersRoster ) {
 }
 
 if (daysRemaining <= 0){
-        $("body").css({"background":"url(http://giant.gfycat.com/NaiveIckyGermanshorthairedpointer.gif"});
+        $("body").css({"background":"url(https://uproxx.files.wordpress.com/2016/04/jt-2.gif?w=650"});
         $("body").css({"background-size":"contain"});
         $("body").css({"background-repeat":"no-repeat"});
         $('.dayTarget').empty();
