@@ -8,6 +8,11 @@ a:hover {
   color: #fff;
 }
 
+ul{
+  list-style: none;
+  padding: 0;
+}
+
 /*
  * Base structure
  */
@@ -20,133 +25,45 @@ body {
   background-size: contain;
   background-repeat: no-repeat;  
   font-size: 1em;
-  line-height: 10em;
-}
-body {
+  /*line-height: 10em;*/
   color: #F57D31;
   text-align: center;
 }
 
-#nameColor{
-  color: #F57D31;
-}
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
 .site-wrapper {
-  display: table;
   width: 100%;
   height: 100%; /* For at least Firefox */
   min-height: 100%;
-  vertical-align: bottom;
-}
-.site-wrapper-inner {
-  display: table-cell;
-  vertical-align: middle;
-}
-.cover-container {
-  margin-right: auto;
-  margin-left: auto;
-  width: 200px;
-  display: inline;
-}
-
-/* Padding for spacing */
-.inner {
-  padding: 1em 0em 1em 0em;
-  background-color: #00529B; 
-  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 
 .dayTarget{
-  font-size: 2em;
+  font-size: 8em;
   color: #F57D31;
-  display: inline-block;
-  line-height: 1em;
-  vertical-align: middle;
-  /*width: 25%;*/
-}
-
-.displayInfo{
-  display: inline-block;
-  vertical-align: middle;
-  font-size: 2em;
-  width: 50%;
-  line-height: 1.4em;
-}
-
-.displayFooter{
-  display: inline-block;
-  text-align: center;
-  width: 20%;
-  text-transform: none;
-  line-height: 1.2em;
-  vertical-align: middle;
-  font-size: 1em;
-}
-
-.displayFooter a{
-  color: #fff;
-  text-transform: uppercase;
-
-}
-
-.displayFooter a:hover{
-  color: #F57D31;
-  text-transform: uppercase;
-}
-
-.footerLinks{
-
-}
-
-/*
- * Header
- */
-
-
-@media (min-width: 768px) {
- 
-  .cover-container{
-    width: 400px; 
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 
-/*
- * Cover
- */
-
-.cover {
-  /*  padding: 0 20px;*/
-  font-family: 'Oswald', sans-serif;
-  text-transform: uppercase;
-  color: #fff;
-}
-
-
-.inner hr{
-  width: 66%;
-}
-
-ul{
-  list-style: none;
-  padding: 0;
-}
-
-
-/*
- * Footer
- */
-
-.mastfoot {
-  /*color: #999;*/ /* IE8 proofing */
-  /*color: rgba(255,255,255,.5);*/
-  font-family: 'Oswald', sans-serif;
-}
-
-.mastfoot a:hover{
-  color: #F57D31;
+/* CIRCLES */
+.outerCircle {
+	border-radius: 50%;
+	width: 30em;
+	height: 30em; 
+	background-color: #00529B;
+	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+  	justify-content: center;
+	/* width and height can be anything, as long as they're equal */
 }
 
 /*
@@ -155,104 +72,33 @@ ul{
 
 @media (min-width: 768px) {
  
-  .mastfoot {
-    position: fixed;
-    bottom: 0;
-    display: inline-block;
-    }
-  /* Start the vertical centering */
-  .site-wrapper-inner {
-    vertical-align: bottom;
-  }
-  /* Handle the widths */
-  .mastfoot,
-  .cover-container {
-    width: 200px; /* Must be percentage or pixels for horizontal alignment */
-  }
 
   body{
     background-size: cover;
   }
 
-.dayTarget{
-  font-size: 8em;
+/*.dayTarget{
+  font-size: 6em;
   color: #F57D31;
   display: inline-block;
   line-height: 1em;
   vertical-align: bottom;
-  /*width: 25%;*/
-}
-
-.displayInfo{
-  display: inline-block;
-  vertical-align: middle;
-  font-size: 2em;
-  width: 50%;
-  line-height: 1em;
-}
-.displayFooter{
-  display: inline-block;
-  text-align: right;
-  width: 20%;
-  text-transform: none;
-  line-height: 1.4em;
-  vertical-align: middle;
-}
-
-.displayFooter a{
-  color: #fff;
-  text-transform: uppercase;
-
-}
-
-.displayFooter a:hover{
-  color: #F57D31;
-  text-transform: uppercase;
-}
-
+  width: 25%;
+}*/
 
 }
 
 @media (min-width: 992px) {
 
-  .mastfoot,
-  .cover-container {
-    width: 300px;
+  body{
+    background-size: cover;
   }
 
-
-.dayTarget{
+/*.dayTarget{
   display: inline-block;
   line-height: 1em;
   vertical-align: bottom;
-  /*width: 25%;*/
 }
+*/
 
-.displayInfo{
-  display: inline-block;
-  vertical-align: middle;
-  font-size: 2em;
-  width: 50%;
-  line-height: 1em;
-}
-
-.displayFooter{
-  display: inline-block;
-  text-align: right;
-  width: 20%;
-  text-transform: none;
-  line-height: 1.4em;
-  vertical-align: middle;
-}
-
-.displayFooter a{
-  color: #fff;
-  text-transform: uppercase;
-
-}
-
-.displayFooter a:hover{
-  color: #F57D31;
-  text-transform: uppercase;
-}
 }

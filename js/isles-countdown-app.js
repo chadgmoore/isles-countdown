@@ -5,7 +5,7 @@ $(document).ready(function() {
     var todaysDate = new Date();
     var secondDate = new Date(seasonStartDate);
     var daysRemaining = Math.ceil(Math.abs(todaysDate.getTime() - secondDate.getTime())/(oneDay));
-    // daysRemaining = 0;
+    // daysRemaining = 72;
 
     $('.dayTarget').empty();
     $('.dayTarget').append(daysRemaining);
@@ -46,10 +46,10 @@ for ( i in data.islandersRoster ) {
         $("body").css({"background-size":"contain"});
         $("body").css({"background-repeat":"no-repeat"});
         $("body").css({"background-color":"#00529B"});
-        $('.inner').delay(800).animate({opacity: 0.1, duration: "slow", easing: "easein"});
-        $('.inner').delay(6400).animate({opacity: 1, duration: "slow", easing: "easein"});
-        $('.displayInfo').empty();
-        $('.displayInfo').empty().append('<span id=nameColor>'+data.islandersRoster[i].firstName + ' ' + data.islandersRoster[i].lastName + '</span>' + " more days!");
+        $('.outerCircle').delay(1800).animate({opacity: 0.5, duration: "slow", easing: "easein"});
+        // $('.outerCircle').delay(6400).animate({opacity: 1, duration: "slow", easing: "easein"});
+        $('.dayTarget').empty();
+        $('.dayTarget').empty().append('<span id=nameColor>'+data.islandersRoster[i].firstName + '<br />' + data.islandersRoster[i].lastName + '</span>');
     }
     // else (data.islandersRoster[i].sweaterNumber != daysRemaining){
     //  $('body').css({"background":"url(http://1.cdn.nhle.com/nhl/images/upload/2014/07/OKPOSO_JT_FANTASY_072814.jpg)"});
