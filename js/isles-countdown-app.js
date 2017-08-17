@@ -81,12 +81,19 @@ if (daysRemaining <= 0){
 //     };
 
 
-var dankBank = ["https://i.redd.it/p4qu1obhwrby.jpg", "https://i.imgur.com/YsW7e7u.jpg"];    
+var dankBank = [
+                "https://i.redd.it/p4qu1obhwrby.jpg", 
+                "https://i.imgur.com/YsW7e7u.jpg", 
+                "https://68.media.tumblr.com/b7422a08959b5a7832f48dabdb16c541/tumblr_ojnm1iYKlX1qgw93ro1_540.gif", 
+                "http://giant.gfycat.com/NaiveIckyGermanshorthairedpointer.gif", "https://68.media.tumblr.com/b7422a08959b5a7832f48dabdb16c541/tumblr_ojnm1iYKlX1qgw93ro1_540.gif",
+                "https://s-media-cache-ak0.pinimg.com/originals/bb/1f/de/bb1fde918e3a952639d0ab1b5369dfdb.jpg"
+
+                ];    
 
 function displayDankImage(){
 
     //the first statement should generate a random number in the range 0 to 6 (the subscript values of the image file names in the imagesArray)
-    var num = Math.floor(Math.random() * 1); // 0...6
+    var num = Math.floor(Math.random() * 4); // 0...6
     //the second statement display the random image from the imagesArray array in the canvas image using the random number as the subscript value
     document.canvas.src = dankBank[num];
 
