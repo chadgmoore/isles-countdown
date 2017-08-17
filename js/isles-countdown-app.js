@@ -6,13 +6,12 @@ $(document).ready(function() {
     var todaysDate = new Date();
     var secondDate = new Date(seasonStartDate);
     var daysRemaining = Math.ceil(Math.abs(todaysDate.getTime() - secondDate.getTime())/(oneDay));
-    // daysRemaining = 22;
+    daysRemaining = 91;
 
 
 
-    $('.outerWhiteCircle').delay(5000).animate({opacity: 0.75, duration: "slow", easing: "easein"});
-    $("dayTarget").animate({"font-size: 2em;"});
-
+    // $('.outerWhiteCircle').delay(5000).animate({opacity: 0.75, duration: "slow", easing: "easein"});
+    
     $('.dayTarget').empty();
     $('.dayTarget').append(daysRemaining);
     $("body").css({"background-color":"#00529B"});
@@ -46,16 +45,16 @@ $(document).ready(function() {
 
 for ( i in data.islandersRoster ) {
     if (data.islandersRoster[i].sweaterNumber == daysRemaining) {
-        $('.dayTarget').empty();
-        $('.dayTarget').append(data.islandersRoster[i].sweaterNumber);
+        $('.nameTarget').empty();
+        $('.nameTarget').append(data.islandersRoster[i].sweaterNumber);
         $("body").css({"background":"url("+data.islandersRoster[i].gif+")"});
         $("body").css({"background-size":"contain"});
         $("body").css({"background-repeat":"no-repeat"});
         $("body").css({"background-color":"#00529B"});
         // $('.outerCircle').delay(1800).animate({opacity: 0.5, duration: "slow", easing: "easein"});
         // $('.outerCircle').delay(6400).animate({opacity: 1, duration: "slow", easing: "easein"});
-        $('.dayTarget').empty();
-        $('.dayTarget').empty().append('<span id=nameColor>'+data.islandersRoster[i].firstName + '<br />' + data.islandersRoster[i].lastName + '</span>');
+        $('.nameTarget').empty();
+        $('.nameTarget').empty().append('<span id=nameColor>'+data.islandersRoster[i].firstName + " " + data.islandersRoster[i].lastName + ' more days!</span>');
     }
     // else (data.islandersRoster[i].sweaterNumber != daysRemaining){
     //  $('body').css({"background":"url(http://1.cdn.nhle.com/nhl/images/upload/2014/07/OKPOSO_JT_FANTASY_072814.jpg)"});
@@ -75,25 +74,31 @@ if (daysRemaining <= 0){
 
 });
 
-function setSweaterNumber(sweaterNum){
-        $('.dayTarget').empty();
-        $('.dayTarget').append(sweaterNum);
-        console.log('This is the sweaterNum: ' + sweaterNum);
-    };
+// function setSweaterNumber(sweaterNum){
+//         $('.dayTarget').empty();
+//         $('.dayTarget').append(sweaterNum);
+//         console.log('This is the sweaterNum: ' + sweaterNum);
+//     };
 
 
 
 /*
 Rewrite for 2017-2018.
-If days remaining = a sweater number:
-Load gif of player
-Set the font size to fit in the circle
-move circle to top left OR lower the opacity to .25 after 5 seconds align-content: center;
 
 
-If days remaining != sweater number
-pick random meme
-move circle to top left or lower the opactiy to .75 after 5 seconds
+1 If days remaining = a sweater number:
+    Load gif of player
+DONE
+
+
+2 If days remaining != sweater number
+pick random background
+
+
+3 "Make it Dank" in the modal
+4 Make it responsive
+5 Set a number?
+
 
 
 */
