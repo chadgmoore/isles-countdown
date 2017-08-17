@@ -1,11 +1,17 @@
 $(document).ready(function() {
+    
     var seasonStartDate="2017/10/6";
 
     var oneDay = 24*60*60*1000;
     var todaysDate = new Date();
     var secondDate = new Date(seasonStartDate);
     var daysRemaining = Math.ceil(Math.abs(todaysDate.getTime() - secondDate.getTime())/(oneDay));
-    // daysRemaining = 72;
+    // daysRemaining = 22;
+
+
+
+    $('.outerWhiteCircle').delay(5000).animate({opacity: 0.75, duration: "slow", easing: "easein"});
+    $("dayTarget").animate({"font-size: 2em;"});
 
     $('.dayTarget').empty();
     $('.dayTarget').append(daysRemaining);
@@ -46,7 +52,7 @@ for ( i in data.islandersRoster ) {
         $("body").css({"background-size":"contain"});
         $("body").css({"background-repeat":"no-repeat"});
         $("body").css({"background-color":"#00529B"});
-        $('.outerCircle').delay(1800).animate({opacity: 0.5, duration: "slow", easing: "easein"});
+        // $('.outerCircle').delay(1800).animate({opacity: 0.5, duration: "slow", easing: "easein"});
         // $('.outerCircle').delay(6400).animate({opacity: 1, duration: "slow", easing: "easein"});
         $('.dayTarget').empty();
         $('.dayTarget').empty().append('<span id=nameColor>'+data.islandersRoster[i].firstName + '<br />' + data.islandersRoster[i].lastName + '</span>');
@@ -65,5 +71,29 @@ if (daysRemaining <= 0){
         $('.displayInfo').append("<span id=nameColor>"+"Let's Go Isles!"+"</span>");
         $('.cover-heading').empty();
 }
+
+
 });
 
+function setSweaterNumber(sweaterNum){
+        $('.dayTarget').empty();
+        $('.dayTarget').append(sweaterNum);
+        console.log('This is the sweaterNum: ' + sweaterNum);
+    };
+
+
+
+/*
+Rewrite for 2017-2018.
+If days remaining = a sweater number:
+Load gif of player
+Set the font size to fit in the circle
+move circle to top left OR lower the opacity to .25 after 5 seconds align-content: center;
+
+
+If days remaining != sweater number
+pick random meme
+move circle to top left or lower the opactiy to .75 after 5 seconds
+
+
+*/
