@@ -6,12 +6,12 @@ $(document).ready(function() {
     var todaysDate = new Date();
     var secondDate = new Date(seasonStartDate);
     var daysRemaining = Math.ceil(Math.abs(todaysDate.getTime() - secondDate.getTime())/(oneDay));
-    daysRemaining = 91;
+    daysRemaining = 72;
 
 
 
-    // $('.outerWhiteCircle').delay(5000).animate({opacity: 0.75, duration: "slow", easing: "easein"});
-    
+    // $('.outerWhiteCircle').delay(1000).animate({opacity: 0.75, duration: "slow", easing: "easein"});
+
     $('.dayTarget').empty();
     $('.dayTarget').append(daysRemaining);
     $("body").css({"background-color":"#00529B"});
@@ -81,6 +81,16 @@ if (daysRemaining <= 0){
 //     };
 
 
+var dankBank = ["https://i.redd.it/p4qu1obhwrby.jpg", "https://i.imgur.com/YsW7e7u.jpg"];    
+
+function displayDankImage(){
+
+    //the first statement should generate a random number in the range 0 to 6 (the subscript values of the image file names in the imagesArray)
+    var num = Math.floor(Math.random() * 1); // 0...6
+    //the second statement display the random image from the imagesArray array in the canvas image using the random number as the subscript value
+    document.canvas.src = dankBank[num];
+
+}
 
 /*
 Rewrite for 2017-2018.
