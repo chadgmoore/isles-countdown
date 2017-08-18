@@ -21,7 +21,7 @@ html,
 body {
   height: 100%;
   background-color: #00529B;
-  background: url("https://nhl.bamcontent.com/images/photos/282560492/1024x576/cut.jpg"); 
+  /*background: url("https://nhl.bamcontent.com/images/photos/282560492/1024x576/cut.jpg"); */
   /*background: url("http://1.cdn.nhle.com/nhl/images/upload/2014/07/OKPOSO_JT_FANTASY_072814.jpg"); */
   background-size: contain;
   background-repeat: no-repeat;  

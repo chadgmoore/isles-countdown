@@ -6,7 +6,7 @@ $(document).ready(function() {
     var todaysDate = new Date();
     var secondDate = new Date(seasonStartDate);
     var daysRemaining = Math.ceil(Math.abs(todaysDate.getTime() - secondDate.getTime())/(oneDay));
-    daysRemaining = 72;
+    // daysRemaining = 72;
 
 
 
@@ -55,10 +55,44 @@ for ( i in data.islandersRoster ) {
         // $('.outerCircle').delay(6400).animate({opacity: 1, duration: "slow", easing: "easein"});
         $('.nameTarget').empty();
         $('.nameTarget').empty().append('<span id=nameColor>'+data.islandersRoster[i].firstName + " " + data.islandersRoster[i].lastName + ' more days!</span>');
-    }
-    // else (data.islandersRoster[i].sweaterNumber != daysRemaining){
-    //  $('body').css({"background":"url(http://1.cdn.nhle.com/nhl/images/upload/2014/07/OKPOSO_JT_FANTASY_072814.jpg)"});
-    // }
+
+}
+    else {
+            var dankBank = [
+                "https://i.redd.it/p4qu1obhwrby.jpg", 
+                "https://i.imgur.com/YsW7e7u.jpg", 
+                "https://68.media.tumblr.com/b7422a08959b5a7832f48dabdb16c541/tumblr_ojnm1iYKlX1qgw93ro1_540.gif", 
+                "http://giant.gfycat.com/NaiveIckyGermanshorthairedpointer.gif", "https://68.media.tumblr.com/b7422a08959b5a7832f48dabdb16c541/tumblr_ojnm1iYKlX1qgw93ro1_540.gif",
+                "https://s-media-cache-ak0.pinimg.com/originals/bb/1f/de/bb1fde918e3a952639d0ab1b5369dfdb.jpg",
+                "http://giant.gfycat.com/NaiveIckyGermanshorthairedpointer.gif",
+                "https://68.media.tumblr.com/cfc65c05e6c93a32b9a6ea222c6d7395/tumblr_omu2diTxuR1rhtaw5o1_540.gif",
+                "https://eyesonisles.com/wp-content/uploads/getty-images/2017/08/643270154-new-york-islanders-v-new-jersey-devils.jpg.jpg",
+                "http://cdn.exstreamist.com/wp-content/uploads/2016/10/watch-New-York-Islanders-online.jpg",
+                "https://s-media-cache-ak0.pinimg.com/originals/bb/1f/de/bb1fde918e3a952639d0ab1b5369dfdb.jpg",
+                "http://az616578.vo.msecnd.net/files/2016/01/10/635880612321265916-63417908_159739593_std.jpg",
+                "https://eyesonisles.com/wp-content/uploads/usat-images/2016/04/9967917-nhl-new-york-islanders-at-pittsburgh-penguins-1.jpeg",
+                "https://68.media.tumblr.com/cfd6a4f90456076c6128c9be1a757f18/tumblr_omiumqHzHl1viy6gjo1_540.gif",
+                "https://68.media.tumblr.com/b359085f385ec28755e8550b1215b6f2/tumblr_omh9kwv8hx1ulql2vo1_540.gif",
+                "https://thumbs.gfycat.com/CloseDangerousIndianpangolin-size_restricted.gif"
+                ];    
+
+            function displayDankImage(){
+
+                var num = Math.floor(Math.random() * 14);
+                var dankUrl = dankBank[num]; 
+                // console.log(dankBank[num]);
+                $('body').css({"background-color":"#00529B"});
+                $("body").css({"background":"url("+dankUrl});
+                // $("body").css({"background-repeat":"no-repeat"});
+                // $("body").css({"background-size":"cover"});
+                $("body").css({"background-repeat":"no-repeat"});
+                $("body").css({"background-size":"100%"});
+            }
+
+            displayDankImage();
+
+
+        }
 }
 
 if (daysRemaining <= 0){
@@ -71,7 +105,6 @@ if (daysRemaining <= 0){
         $('.cover-heading').empty();
 }
 
-
 });
 
 // function setSweaterNumber(sweaterNum){
@@ -81,23 +114,35 @@ if (daysRemaining <= 0){
 //     };
 
 
-var dankBank = [
-                "https://i.redd.it/p4qu1obhwrby.jpg", 
-                "https://i.imgur.com/YsW7e7u.jpg", 
-                "https://68.media.tumblr.com/b7422a08959b5a7832f48dabdb16c541/tumblr_ojnm1iYKlX1qgw93ro1_540.gif", 
-                "http://giant.gfycat.com/NaiveIckyGermanshorthairedpointer.gif", "https://68.media.tumblr.com/b7422a08959b5a7832f48dabdb16c541/tumblr_ojnm1iYKlX1qgw93ro1_540.gif",
-                "https://s-media-cache-ak0.pinimg.com/originals/bb/1f/de/bb1fde918e3a952639d0ab1b5369dfdb.jpg"
+// var dankBank = [
+//                 "https://i.redd.it/p4qu1obhwrby.jpg", 
+//                 "https://i.imgur.com/YsW7e7u.jpg", 
+//                 "https://68.media.tumblr.com/b7422a08959b5a7832f48dabdb16c541/tumblr_ojnm1iYKlX1qgw93ro1_540.gif", 
+//                 "http://giant.gfycat.com/NaiveIckyGermanshorthairedpointer.gif", "https://68.media.tumblr.com/b7422a08959b5a7832f48dabdb16c541/tumblr_ojnm1iYKlX1qgw93ro1_540.gif",
+//                 "https://s-media-cache-ak0.pinimg.com/originals/bb/1f/de/bb1fde918e3a952639d0ab1b5369dfdb.jpg",
+//                 "http://giant.gfycat.com/NaiveIckyGermanshorthairedpointer.gif",
+//                 "https://68.media.tumblr.com/cfc65c05e6c93a32b9a6ea222c6d7395/tumblr_omu2diTxuR1rhtaw5o1_540.gif",
+//                 "https://eyesonisles.com/wp-content/uploads/getty-images/2017/08/643270154-new-york-islanders-v-new-jersey-devils.jpg.jpg",
+//                 "http://cdn.exstreamist.com/wp-content/uploads/2016/10/watch-New-York-Islanders-online.jpg",
+//                 "https://s-media-cache-ak0.pinimg.com/originals/bb/1f/de/bb1fde918e3a952639d0ab1b5369dfdb.jpg",
+//                 "http://az616578.vo.msecnd.net/files/2016/01/10/635880612321265916-63417908_159739593_std.jpg",
+//                 "https://eyesonisles.com/wp-content/uploads/usat-images/2016/04/9967917-nhl-new-york-islanders-at-pittsburgh-penguins-1.jpeg",
+//                 "https://68.media.tumblr.com/cfd6a4f90456076c6128c9be1a757f18/tumblr_omiumqHzHl1viy6gjo1_540.gif",
+//                 "https://68.media.tumblr.com/b359085f385ec28755e8550b1215b6f2/tumblr_omh9kwv8hx1ulql2vo1_540.gif",
+//                 "https://thumbs.gfycat.com/CloseDangerousIndianpangolin-size_restricted.gif"
+//                 ];    
 
-                ];    
+// function displayDankImage(){
 
-function displayDankImage(){
-
-    //the first statement should generate a random number in the range 0 to 6 (the subscript values of the image file names in the imagesArray)
-    var num = Math.floor(Math.random() * 4); // 0...6
-    //the second statement display the random image from the imagesArray array in the canvas image using the random number as the subscript value
-    document.canvas.src = dankBank[num];
-
-}
+//     var num = Math.floor(Math.random() * 14);
+//     var dankUrl = dankBank[num]; 
+//     console.log(dankBank[num]);
+//     $("body").css({"background":"url("+dankUrl});
+//     // $("body").css({"background-repeat":"no-repeat"});
+//     $("body").css({"background-size":"contain"});
+//     $("body").css({"background-repeat":"no-repeat"});
+//     // $("body").css({"background-size":"100% 100%"});
+// }
 
 /*
 Rewrite for 2017-2018.
@@ -110,12 +155,16 @@ DONE
 
 2 If days remaining != sweater number
 pick random background
-
+DONE
 
 3 "Make it Dank" in the modal
-4 Make it responsive
-5 Set a number?
+NO
 
+4 Make it responsive
+Next
+
+5 Set a number?
+NO
 
 
 */
