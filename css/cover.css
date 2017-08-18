@@ -297,21 +297,55 @@ hr {
  * Affix and center
  */
 
-@media (min-width: 768px) {
+
+@media (max-width: 447px) {
+
+.header{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: flex-start;
+	width: 100%;
+	height: 5em; 
+}
+ 
+ .dayTarget{
+  font-size: 2em;
+}
+
+.outerCircle {
+	border-radius: 50%;
+	width: 3em;
+	height: 3em;
+	}
+
+
+.outerWhiteCircle {
+	border-radius: 50%;
+	width: 4em;
+	height: 4em;
+	display: flex;
+  	align-items: center;
+  	justify-content: center; 
+}
+
+.modal {
+	display: block;
+	padding: 0 1em;
+	text-align: right;
+	width: 100%;
+	height: 100%;
+	}
+
+}
+
+/*@media (min-width: 768px) {
  
 
   body{
     background-size: cover;
   }
 
-/*.dayTarget{
-  font-size: 6em;
-  color: #F57D31;
-  display: inline-block;
-  line-height: 1em;
-  vertical-align: bottom;
-  width: 25%;
-}*/
 
 }
 
@@ -321,11 +355,6 @@ hr {
     background-size: cover;
   }
 
-/*.dayTarget{
-  display: inline-block;
-  line-height: 1em;
-  vertical-align: bottom;
-}
-*/
 
-}
+}*/
+
