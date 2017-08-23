@@ -6,7 +6,8 @@ $(document).ready(function() {
     var todaysDate = new Date();
     var secondDate = new Date(seasonStartDate);
     var daysRemaining = Math.ceil(Math.abs(todaysDate.getTime() - secondDate.getTime())/(oneDay));
-    // daysRemaining = 72;
+    // daysRemaining = 7;
+    // console.log(daysRemaining);
 
 
 
@@ -15,6 +16,8 @@ $(document).ready(function() {
     $('.dayTarget').empty();
     $('.dayTarget').append(daysRemaining);
     $("body").css({"background-color":"#00529B"});
+
+    
 
     var data = {"islandersRoster":[
     {"sweaterNumber":"1", "firstName":"Thomas", "lastName":"Greiss", "position":"G", "gif":"http://bloguin.com/islandersinsight/wp-content/uploads/sites/173/2014/10/Tavares-Goal-vs-Hurricanes.gif"},
@@ -44,21 +47,35 @@ $(document).ready(function() {
 ]};
 
 for ( i in data.islandersRoster ) {
-    if (data.islandersRoster[i].sweaterNumber == daysRemaining) {
-        $('.nameTarget').empty();
-        $('.nameTarget').append(data.islandersRoster[i].sweaterNumber);
-        $("body").css({"background":"url("+data.islandersRoster[i].gif+")"});
-        $("body").css({"background-size":"contain"});
-        $("body").css({"background-repeat":"no-repeat"});
-        $("body").css({"background-color":"#00529B"});
-        // $('.outerCircle').delay(1800).animate({opacity: 0.5, duration: "slow", easing: "easein"});
-        // $('.outerCircle').delay(6400).animate({opacity: 1, duration: "slow", easing: "easein"});
-        $('.nameTarget').empty();
-        $('.nameTarget').empty().append('<span id=nameColor>'+data.islandersRoster[i].firstName + " " + data.islandersRoster[i].lastName + ' more days!</span>');
-
+    var targetSweaterNum = data.islandersRoster[i].sweaterNumber;
+    if ( targetSweaterNum == daysRemaining) {
+        displaySweaterNumGif(data.islandersRoster[i].gif);
 }
     else {
-            var dankBank = [
+            displayDankImage();
+        }
+}
+
+
+// if (daysRemaining <= 0){
+//         $("body").css({"background":"url(http://giant.gfycat.com/NaiveIckyGermanshorthairedpointer.gif)"});
+//         $("body").css({"background-size":"contain"});
+//         $("body").css({"background-repeat":"no-repeat"});
+//         $('.dayTarget').empty();
+//         $('.displayInfo').empty();
+//         $('.displayInfo').append("<span id=nameColor>"+"Let's Go Isles!"+"</span>");
+//         $('.cover-heading').empty();
+// }
+
+function displaySweaterNumGif(){
+        var gifToDisplay = data.islandersRoster[i].gif;
+        $("body").css({"background":"url("+gifToDisplay});
+
+}
+
+function displayDankImage(){
+
+    var dankBank = [
                 "https://i.redd.it/p4qu1obhwrby.jpg", 
                 "https://i.imgur.com/YsW7e7u.jpg", 
                 "https://68.media.tumblr.com/b7422a08959b5a7832f48dabdb16c541/tumblr_ojnm1iYKlX1qgw93ro1_540.gif", 
@@ -73,37 +90,23 @@ for ( i in data.islandersRoster ) {
                 "https://eyesonisles.com/wp-content/uploads/usat-images/2016/04/9967917-nhl-new-york-islanders-at-pittsburgh-penguins-1.jpeg",
                 "https://68.media.tumblr.com/cfd6a4f90456076c6128c9be1a757f18/tumblr_omiumqHzHl1viy6gjo1_540.gif",
                 "https://68.media.tumblr.com/b359085f385ec28755e8550b1215b6f2/tumblr_omh9kwv8hx1ulql2vo1_540.gif",
-                "https://thumbs.gfycat.com/CloseDangerousIndianpangolin-size_restricted.gif"
+                "https://thumbs.gfycat.com/CloseDangerousIndianpangolin-size_restricted.gif",
+                "https://media2.giphy.com/media/xTiN0NaLs6XmLQyjXq/giphy.gif",
+                "http://i.imgur.com/A1nf6XM.gif",
+                "http://stream1.gifsoup.com/view4/1219351/jordan-eberle-o.gif",
+                "https://the1stpass.files.wordpress.com/2016/12/barzal-5.gif?w=712"
                 ];    
 
-            function displayDankImage(){
-
-                var num = Math.floor(Math.random() * 14);
-                var dankUrl = dankBank[num]; 
-                // console.log(dankBank[num]);
-                $('body').css({"background-color":"#00529B"});
-                $("body").css({"background":"url("+dankUrl});
-                // $("body").css({"background-repeat":"no-repeat"});
-                // $("body").css({"background-size":"cover"});
-                $("body").css({"background-repeat":"no-repeat"});
-                $("body").css({"background-size":"100%"});
-            }
-
-            displayDankImage();
-
-
-        }
-}
-
-if (daysRemaining <= 0){
-        $("body").css({"background":"url(http://giant.gfycat.com/NaiveIckyGermanshorthairedpointer.gif"});
-        $("body").css({"background-size":"contain"});
-        $("body").css({"background-repeat":"no-repeat"});
-        $('.dayTarget').empty();
-        $('.displayInfo').empty();
-        $('.displayInfo').append("<span id=nameColor>"+"Let's Go Isles!"+"</span>");
-        $('.cover-heading').empty();
-}
+    var num = Math.floor(Math.random() * 19);
+    var dankUrl = dankBank[num]; 
+    // console.log(dankBank[num]);
+    $('body').css({"background-color":"#00529B"});
+    $("body").css({"background":"url("+dankUrl});
+    // $("body").css({"background-repeat":"no-repeat"});
+    // $("body").css({"background-size":"cover"});
+    $("body").css({"background-repeat":"no-repeat"});
+    $("body").css({"background-size":"100%"});
+};
 
 });
 
