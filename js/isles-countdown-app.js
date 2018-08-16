@@ -69,12 +69,19 @@ function displaySweaterNumGif(){
 function displayDankImage(){
 
     var dankBank = [
-                "https://46wvda23y0nl13db2j3bl1yx-wpengine.netdna-ssl.com/wp-content/uploads/2016/02/image.jpg", 
-                "https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fnhl.bamcontent.com%2Fimages%2Fphotos%2F281468274%2F1024x576%2Fcut.jpg&f=1", 
-                "https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia.giphy.com%2Fmedia%2F3oriOg7y7JbCV9CiyY%2Fgiphy.gif&f=1"
+                "https://46wvda23y0nl13db2j3bl1yx-wpengine.netdna-ssl.com/wp-content/uploads/2016/02/image.jpg", //lou
+                "https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fnhl.bamcontent.com%2Fimages%2Fphotos%2F281468274%2F1024x576%2Fcut.jpg&f=1", //lou
+                "https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia.giphy.com%2Fmedia%2F3oriOg7y7JbCV9CiyY%2Fgiphy.gif&f=1", //trotz brows
+                "http://i.imgur.com/bBiwzJY.gif", //leddy
+                "https://cdn-images-1.medium.com/max/1600/1*JMG2V59iMIXpAHKg9bXNYg.gif", //pulock
+                "https://78.media.tumblr.com/72d97fc5a25fcdaf0ff12e7097128c4f/tumblr_p5axwiVAVQ1w7b94zo2_500.gif", //ebs
+                "https://cdn-images-1.medium.com/max/1600/1*tB0JOhP0qBGpKsACPtGBPQ.gif", //bailey
+                "https://cdn-images-1.medium.com/max/1600/1*m9SGfDWoJDumlSD83N2JlQ.gif", //ho-sang
+                "http://giant.gfycat.com/GraveBraveAntlion.gif", //lee
+                "https://media2.giphy.com/media/xTiN0NaLs6XmLQyjXq/giphy.gif" //beaver
                 ];    
 
-    var num = Math.floor(Math.random() * 3);
+    var num = Math.floor(Math.random() * 10);
     var dankUrl = dankBank[num]; 
     // console.log(dankBank[num]);
     $('body').css({"background-color":"#00529B"});
