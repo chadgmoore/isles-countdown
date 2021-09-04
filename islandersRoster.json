@@ -1,23 +1,10 @@
 {"islandersRoster":[
-    {"sweaterNumber":"1", "name":"Thomas Greiss", "position":"G"},
-	{"sweaterNumber":"2", "name":"Nick Leddy", "position":"D"},
-	{"sweaterNumber":"3", "name":"Travis Hamonic", "position":"D"},
 	{"sweaterNumber":"12", "name":"Josh Bailey", "position":"L"},
-	{"sweaterNumber":"14", "name":"Thomas Hickey", "position":"D"},
 	{"sweaterNumber":"15", "name":"Cal Clutterbuck", "position":"R"},
 	{"sweaterNumber":"17", "name":"Matt Martin", "position":"L"},
-	{"sweaterNumber":"18", "name":"Ryan Strome", "position":"C"},
-	{"sweaterNumber":"21", "name":"Kyle Okposo", "position":"R"},
 	{"sweaterNumber":"27", "name":"Anders Lee", "position":"C"},
 	{"sweaterNumber":"29", "name":"Brock Nelson", "position":"C"},
-	{"sweaterNumber":"37", "name":"Brian Strait", "position":"D"},
-	{"sweaterNumber":"40", "name":"Michael Grabner", "position":"R"},
-	{"sweaterNumber":"41", "name":"Jaroslav Halak", "position":"G"},
-	{"sweaterNumber":"44", "name":"Calvin De Haan", "position":"D"},
-	{"sweaterNumber":"51", "name":"Frans Nielsen", "position":"C"},
 	{"sweaterNumber":"53", "name":"Casey Cizikas", "position":"C"},
-	{"sweaterNumber":"55", "name":"Johnny Boychuk", "position":"D"},
-	{"sweaterNumber":"84", "name":"Mikhail Grabovski", "position":"C"},
-	{"sweaterNumber":"86", "name":"Nikolay Kulemin", "position":"L"},
-	{"sweaterNumber":"91", "name":"John Tavares", "position":"C"}    
 ]}
+
+//unused in 2021-2022 version. 
